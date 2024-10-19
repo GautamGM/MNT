@@ -1,0 +1,9 @@
+.hero-Bg{
+    background-image: url("../../../../public/images/mg_720\ \(1\).png");
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -999;
+   background-size: cover;
+
+    /* background-size:cover; */
+}
