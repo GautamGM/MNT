@@ -1,13 +1,13 @@
-import logo from "C:/Users/Dell/Desktop/MNT/MNT/public/images/Logo (1).png";
-import "./footer.css"
+import logo from "C:/Users/Dell/Downloads/MNTTWo/public/images/Logo (1).png";
+import "./footer.css";
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer-container h-[350px] pb-[40px]   flex justify-between items-end ">
+    <footer >
+      <div className="footer-container mt-[-100px] h-[600px] md:h-[350px]  lg:pb-[40px]   flex flex-col lg:flex-row  lg:justify-between lg:items-end ">
         {/* logo start */}
-        <div class="  flex flex-col justify-between   h-[200px] w-[50%] ">
-          <div className="  md:w-5/5 w-[300px]">
-            <div class="flex  items-center mb-1 ">
+        <div class=" flex flex-col xl:ml-[30px] justify-around text-center lg:text-start lg:text items-center lg:items-start lg:justify-between h-[180px] lg:h-[200px] lg:w-[50%]  ">
+          <div className="md:w-5/5 lg:w-[300px]">
+            <div class="flex justify-center lg:justify-normal mb-1 ">
               <img src={logo} alt="Logo" />
             </div>
             <p className="text-white  font-[ClashDisplay-Medium] mt-[30px]">
@@ -20,9 +20,12 @@ const Footer = () => {
         </div>
         {/* Logo end */}
         {/* ---------------------------------------------------------------> */}
-        <div className="links  text-white h-[200px] w-[40%] flex justify-between">
-          <div className="More-blog">
-            <h5 className="font-[ClashDisplay-Medium] text-[18px] text-[#FBD784] " >More on The Blog</h5>
+        {/* footerLinks */}
+        <div className="links text-center md:text-start text-white h-[200px] mt-[30px] lg:w-[40%] flex flex-col md:flex-row justify-evenly lg:justify-between items-center md:items-start">
+          <div className="More-blog min-w-[200px]">
+            <h5 className="font-[ClashDisplay-Medium] text-[18px] text-[#FBD784] ">
+              More on The Blog
+            </h5>
             <ul>
               <li>
                 <a href="#">About MNTN </a>
@@ -43,8 +46,10 @@ const Footer = () => {
           </div>
           {/* --------------------------------------------------------------------- */}
           {/* 2nd Link Tab */}
-          <div className="More-MTN">
-            <h5 className="text-[18px] font-[ClashDisplay-Medium] text-[#FBD784] " >More on MNTN</h5>
+          <div className="More-MTN mt-[30px] md:mt-[0px] min-w-[200px] ">
+            <h5 className="text-[18px]  font-[ClashDisplay-Medium] text-[#FBD784] ">
+              More on MNTN
+            </h5>
             <ul>
               <li>
                 <a href="#">The Team </a>
@@ -58,6 +63,8 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
+        {/* --------------------------------------------------------------------> */}
       </div>
     </footer>
   );
